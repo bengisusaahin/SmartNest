@@ -30,8 +30,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = "11"
@@ -59,12 +59,21 @@ dependencies {
 
     // ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
     // LiveData
     implementation(libs.androidx.lifecycle.livedata.ktx)
+
     // Fragment
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.hilt.navigation.fragment)
+
     // Navigation
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
+
+    // OKHTTP
+    implementation(libs.okhttp)
+
+    // JSON
+    implementation(libs.gson)
 }
