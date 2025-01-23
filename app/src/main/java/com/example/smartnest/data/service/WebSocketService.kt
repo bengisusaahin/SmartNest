@@ -38,8 +38,8 @@ class WebSocketService @Inject constructor(){
             override fun onMessage(webSocket: WebSocket, text: String) {
                 try {
                     val response = gson.fromJson(text, WebSocketResponseDto::class.java)
-                    _messages.trySend(text)
-                    Log.d("WebSocket", "Received message: $text")
+                    _messages.trySend(response.toString())
+                    Log.d("WebSocket", "Received message: $response")
                 } catch (e: Exception) {
                     Log.e("WebSocket", "Error parsing message: ${e.message}")
                 }
