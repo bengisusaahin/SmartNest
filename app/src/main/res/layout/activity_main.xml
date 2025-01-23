@@ -1,49 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
-    android:background="@drawable/gradient_background"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/first_page_title"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:fontFamily="@font/poppins_regular"
-        android:gravity="center" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
 
-    <TextView
-        android:id="@+id/tv_subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/first_page_version_number"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/poppins_regular"
-        android:layout_marginTop="8dp"
-        android:gravity="center" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_accounts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/first_page_button_title"
-        android:textSize="18sp"
-        app:cornerRadius="8dp"
-        android:backgroundTint="@color/cardview_shadow_start_color"
-        android:textColor="@color/white"
-        android:fontFamily="@font/poppins_regular"
-        android:layout_marginTop="24dp" />
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
