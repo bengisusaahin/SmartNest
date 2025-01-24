@@ -12,7 +12,7 @@ import okhttp3.WebSocket
 import okhttp3.WebSocketListener
 import javax.inject.Inject
 import javax.inject.Singleton
-import com.example.smartnest.data.model.*
+import com.example.smartnest.data.dto.*
 import com.google.gson.Gson
 
 @Singleton

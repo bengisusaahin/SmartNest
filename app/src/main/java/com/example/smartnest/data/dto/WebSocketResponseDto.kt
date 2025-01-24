@@ -1,4 +1,4 @@
-package com.example.smartnest.data.model
+package com.example.smartnest.data.dto
 
 data class WebSocketResponseDto(
     val id: Int,
