@@ -9,10 +9,8 @@
     android:fitsSystemWindows="true">
 
     <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar_layout"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize" />
+        android:id="@+id/appBar"
+        layout="@layout/appbar_layout" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -58,7 +56,7 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_aydinlatma"
+                    android:contentDescription="@string/dashboard_icon_for_light"
                     android:src="@drawable/outline_light_24" />
 
                 <TextView

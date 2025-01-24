@@ -1,238 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="2"
-    android:rowCount="6"
-    tools:context=".ui.light.LightFragment">
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".ui.light.LightFragment"
+    android:fitsSystemWindows="true">
 
-    <!-- Yönetim Harita Spot -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/managementMapSpotCard"
-        style="@style/DashboardCard"
-        android:layout_width="0dp"
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/appbar_layout" />
+
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="2dp">
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="6">
 
-        <LinearLayout style="@style/DashboardItemLayout">
+        <!-- Yönetim Harita Spot -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/managementMapSpotCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
 
-            <ImageView
-                style="@style/DashboardIcon"
-                android:contentDescription="@string/dashboard_icon_for_light"
-                android:src="@drawable/outline_highlight_24" />
+            <LinearLayout style="@style/DashboardItemLayout">
 
-            <TextView
-                style="@style/DashboardText"
-                android:text="@string/management_map_spot_card" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_light"
+                    android:src="@drawable/outline_highlight_24" />
 
-    <!-- Yönetim Harita Spot -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/hangingLedCard"
-        style="@style/DashboardCard"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="2dp">
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/management_map_spot_card" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout style="@style/DashboardItemLayout">
+        <!-- Yönetim Harita Spot -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/hangingLedCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
 
-            <ImageView
-                style="@style/DashboardIcon"
-                android:contentDescription="@string/dashboard_icon_for_light"
-                android:src="@drawable/outline_highlight_24" />
+            <LinearLayout style="@style/DashboardItemLayout">
 
-            <TextView
-                style="@style/DashboardText"
-                android:text="@string/hanging_led" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_light"
+                    android:src="@drawable/outline_highlight_24" />
 
-    <!-- Yonetim Spot -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/managementSpotCard"
-        style="@style/DashboardCard"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="2dp">
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/hanging_led" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout style="@style/DashboardItemLayout">
+        <!-- Yonetim Spot -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/managementSpotCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
 
-            <ImageView
-                style="@style/DashboardIcon"
-                android:contentDescription="@string/dashboard_icon_for_light"
-                android:src="@drawable/outline_highlight_24" />
-            <TextView
-                style="@style/DashboardText"
-                android:text="@string/managementSpotCard" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+            <LinearLayout style="@style/DashboardItemLayout">
 
-    <!-- Pano Aydınlatma 2 -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/panelLighting2Card"
-        style="@style/DashboardCard"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="2dp">
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_light"
+                    android:src="@drawable/outline_highlight_24" />
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/managementSpotCard" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout style="@style/DashboardItemLayout">
+        <!-- Pano Aydınlatma 2 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/panelLighting2Card"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
 
-            <ImageView
-                style="@style/DashboardIcon"
-                android:contentDescription="@string/dashboard_icon_for_light"
-                android:src="@drawable/outline_highlight_24" />
+            <LinearLayout style="@style/DashboardItemLayout">
 
-            <TextView
-                style="@style/DashboardText"
-                android:text="@string/panel_lighting_2" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_light"
+                    android:src="@drawable/outline_highlight_24" />
 
-    <!-- Teknik Aydınlatma -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/technicalLighting"
-        style="@style/DashboardCard"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="2dp">
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/panel_lighting_2" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout style="@style/DashboardItemLayout">
+        <!-- Teknik Aydınlatma -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/technicalLighting"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
 
-            <ImageView
-                style="@style/DashboardIcon"
-                android:contentDescription="@string/dashboard_icon_for_light"
-                android:src="@drawable/outline_highlight_24" />
+            <LinearLayout style="@style/DashboardItemLayout">
 
-            <TextView
-                style="@style/DashboardText"
-                android:text="@string/technical_lighting" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_light"
+                    android:src="@drawable/outline_highlight_24" />
 
-    <!-- Arge WC -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/argeWCCard"
-        style="@style/DashboardCard"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="2dp">
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/technical_lighting" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout style="@style/DashboardItemLayout">
+        <!-- Arge WC -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/argeWCCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
 
-            <ImageView
-                style="@style/DashboardIcon"
-                android:contentDescription="@string/dashboard_icon_for_light"
-                android:src="@drawable/outline_light_24" />
-            <TextView
-                style="@style/DashboardText"
-                android:text="@string/r_d_wc" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+            <LinearLayout style="@style/DashboardItemLayout">
 
-    <!-- Enter Light -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/enterLightCard"
-        style="@style/DashboardCard"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="2dp">
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_light"
+                    android:src="@drawable/outline_light_24" />
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/r_d_wc" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout style="@style/DashboardItemLayout">
+        <!-- Enter Light -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/enterLightCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
 
-            <ImageView
-                style="@style/DashboardIcon"
-                android:contentDescription="@string/dashboard_icon_for_light"
-                android:src="@drawable/outline_highlight_24" />
+            <LinearLayout style="@style/DashboardItemLayout">
 
-            <TextView
-                style="@style/DashboardText"
-                android:text="@string/enterLight" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_light"
+                    android:src="@drawable/outline_highlight_24" />
 
-    <!-- Kitchen Light -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/kitchenLightCard"
-        style="@style/DashboardCard"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="2dp">
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/enterLight" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout style="@style/DashboardItemLayout">
+        <!-- Kitchen Light -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/kitchenLightCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
 
-            <ImageView
-                style="@style/DashboardIcon"
-                android:contentDescription="@string/dashboard_icon_for_light"
-                android:src="@drawable/outline_light_24" />
+            <LinearLayout style="@style/DashboardItemLayout">
 
-            <TextView
-                style="@style/DashboardText"
-                android:text="@string/kitchen_light" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_light"
+                    android:src="@drawable/outline_light_24" />
 
-    <!-- basement storage -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/basementStorageCard"
-        style="@style/DashboardCard"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="2dp">
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/kitchen_light" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout style="@style/DashboardItemLayout">
+        <!-- basement storage -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/basementStorageCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
 
-            <ImageView
-                style="@style/DashboardIcon"
-                android:contentDescription="@string/dashboard_icon_for_light"
-                android:src="@drawable/outline_light_24" />
+            <LinearLayout style="@style/DashboardItemLayout">
 
-            <TextView
-                style="@style/DashboardText"
-                android:text="@string/basement_storage_light" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_light"
+                    android:src="@drawable/outline_light_24" />
 
-    <!-- faultCard -->
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/faultCard"
-        style="@style/DashboardCard"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_margin="2dp">
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/basement_storage_light" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
-        <LinearLayout style="@style/DashboardItemLayout">
+        <!-- faultCard -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/faultCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
 
-            <ImageView
-                style="@style/DashboardIcon"
-                android:contentDescription="@string/dashboard_icon_for_light"
-                android:src="@drawable/outline_highlight_24" />
+            <LinearLayout style="@style/DashboardItemLayout">
 
-            <TextView
-                style="@style/DashboardText"
-                android:text="@string/fault_light" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_light"
+                    android:src="@drawable/outline_highlight_24" />
 
-</GridLayout>
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/fault_light" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+    </GridLayout>
+</LinearLayout>
