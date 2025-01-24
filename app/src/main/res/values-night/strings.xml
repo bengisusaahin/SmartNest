@@ -44,4 +44,5 @@
     <string name="panel_lighting_2">Pano Aydınlatma 2</string>
     <string name="technical_lighting">Teknik Aydınlatma</string>
     <string name="r_d_wc">Arge WC</string>
+    <string name="back">Back button</string>
 </resources>

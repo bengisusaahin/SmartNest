@@ -34,14 +34,15 @@
     <string name="dashboard_icon_for_favorites">dashboard icon for favorites</string>
     <string name="settings">Settings</string>
     <string name="inohom">inohom</string>
-    <string name="fault_light">Saha-Arıza Ayd 1</string>
-    <string name="basement_storage_light">Bodrum Depo Ayd 1</string>
-    <string name="kitchen_light">Mutfak Aydınlatma</string>
-    <string name="enterLight">Giriş Aydınlatma</string>
-    <string name="management_map_spot_card">Yönetim Harita Spot</string>
-    <string name="hanging_led">Sarkan Led</string>
-    <string name="managementSpotCard">Yönetim Spot</string>
+    <string name="fault_light">Fault Light 1</string>
+    <string name="basement_storage_light">Basement Storage Light 1</string>
+    <string name="kitchen_light">Kitchen Light</string>
+    <string name="enterLight">Enter Light</string>
+    <string name="management_map_spot_card">Management Map Spot</string>
+    <string name="hanging_led">Hanging Led</string>
+    <string name="managementSpotCard">Management Spot</string>
     <string name="panel_lighting_2">Panel Lighting 2</string>
-    <string name="technical_lighting">Teknik Aydınlatma</string>
+    <string name="technical_lighting">Technical Lighting</string>
     <string name="r_d_wc">Arge WC</string>
+    <string name="back">Back button</string>
 </resources>
