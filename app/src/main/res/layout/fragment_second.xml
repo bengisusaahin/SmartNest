@@ -35,12 +35,12 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_favoriler"
+                    android:contentDescription="@string/dashboard_icon_for_favorites"
                     android:src="@drawable/outline_star_outline_24" />
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/favoriler" />
+                    android:text="@string/favorites" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -58,12 +58,12 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_ayd_nlatma"
+                    android:contentDescription="@string/dashboard_icon_for_aydinlatma"
                     android:src="@drawable/outline_light_24" />
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/aydinlatma" />
+                    android:text="@string/light" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -85,7 +85,7 @@
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/perde" />
+                    android:text="@string/curtain" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -103,12 +103,12 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_priz"
+                    android:contentDescription="@string/dashboard_icon_for_plug"
                     android:src="@drawable/outline_power_24" />
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/priz" />
+                    android:text="@string/plug" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -126,12 +126,12 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_senaryo"
+                    android:contentDescription="@string/dashboard_icon_for_scenario"
                     android:src="@drawable/outline_movie_24" />
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/senaryo" />
+                    android:text="@string/scenario" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -149,12 +149,12 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_kumanda"
+                    android:contentDescription="@string/dashboard_icon_for_control"
                     android:src="@drawable/outline_settings_remote_24" />
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/kumanda" />
+                    android:text="@string/control" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -176,7 +176,7 @@
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/kamera" />
+                    android:text="@string/camera" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -240,12 +240,12 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_sistem"
+                    android:contentDescription="@string/dashboard_icon_for_system"
                     android:src="@drawable/outline_settings_24" />
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/sistem" />
+                    android:text="@string/system" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -263,12 +263,12 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_isitma"
+                    android:contentDescription="@string/dashboard_icon_for_heating"
                     android:src="@drawable/outline_whatshot_24" />
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/is_tma" />
+                    android:text="@string/heating" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -286,12 +286,12 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_klima"
+                    android:contentDescription="@string/dashboard_icon_for_air_conditioning"
                     android:src="@drawable/outline_ac_unit_24" />
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/klima" />
+                    android:text="@string/air_cond" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -332,12 +332,12 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_site_yonetimi"
+                    android:contentDescription="@string/dashboard_icon_for_site_management"
                     android:src="@drawable/outline_business_24" />
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/site_yonetimi" />
+                    android:text="@string/site_management" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -355,12 +355,12 @@
 
                 <ImageView
                     style="@style/DashboardIcon"
-                    android:contentDescription="@string/dashboard_icon_for_konsiyerj"
+                    android:contentDescription="@string/dashboard_icon_for_concierge"
                     android:src="@drawable/outline_support_agent_24" />
 
                 <TextView
                     style="@style/DashboardText"
-                    android:text="@string/konsiyerj" />
+                    android:text="@string/concierge" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
