@@ -5,4 +5,6 @@
     <color name="pink">#F88FB3</color>
     <color name="light_blue">#2196F3</color>
     <color name="blue">#14278C</color>
+    <color name="card_background">#7F000000</color>
+    <color name="ripple_color">#40FFFFFF</color>
 </resources>

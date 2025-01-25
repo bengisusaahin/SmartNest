@@ -5,5 +5,9 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.SmartNest" parent="Base.Theme.SmartNest" />
+    <style name="Theme.SmartNest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@color/card_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
 </resources>

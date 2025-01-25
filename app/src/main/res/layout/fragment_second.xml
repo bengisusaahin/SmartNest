@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.secondpage.SecondFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="6"
+        android:padding="0dp">
+
+        <!-- Favoriler -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/favorilerCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_favoriler"
+                    android:src="@drawable/outline_star_outline_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/favoriler" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Aydınlatma -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/aydinlatmaCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_ayd_nlatma"
+                    android:src="@drawable/outline_light_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/aydinlatma" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Perde -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/perdeCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:src="@drawable/outline_curtains_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/perde" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Priz -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/prizCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_priz"
+                    android:src="@drawable/outline_power_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/priz" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Senaryo -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/senaryoCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_senaryo"
+                    android:src="@drawable/outline_movie_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/senaryo" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Kumanda -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/kumandaCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_kumanda"
+                    android:src="@drawable/outline_settings_remote_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/kumanda" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Kamera -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/kameraCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:src="@drawable/outline_videocam_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/kamera" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Alarm -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/alarmCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_alarm"
+                    android:src="@drawable/outline_access_alarm_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/alarm" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- İnterkom -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/interkomCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_interkom"
+                    android:src="@drawable/outline_phone_enabled_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/interkom" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Sistem -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/sistemCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_sistem"
+                    android:src="@drawable/outline_settings_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/sistem" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Isıtma -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/isitmaCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_isitma"
+                    android:src="@drawable/outline_whatshot_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/is_tma" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Klima -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/klimaCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_klima"
+                    android:src="@drawable/outline_ac_unit_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/klima" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Sensör -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/sensorCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_sensor"
+                    android:src="@drawable/outline_sensors_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/sensor" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Site Yönetimi -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/siteYonetimCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_site_yonetimi"
+                    android:src="@drawable/outline_business_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/site_yonetimi" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Konsiyerj -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/konsiyerjCard"
+            style="@style/DashboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp">
+
+            <LinearLayout style="@style/DashboardItemLayout">
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:contentDescription="@string/dashboard_icon_for_konsiyerj"
+                    android:src="@drawable/outline_support_agent_24" />
+
+                <TextView
+                    style="@style/DashboardText"
+                    android:text="@string/konsiyerj" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </GridLayout>
+
+</LinearLayout>

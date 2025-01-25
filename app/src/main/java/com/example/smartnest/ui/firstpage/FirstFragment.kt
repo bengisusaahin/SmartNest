@@ -9,8 +9,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.example.smartnest.databinding.FragmentFirstBinding
 import com.example.smartnest.domain.util.RootResult
+import com.example.smartnest.R
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -33,8 +35,8 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         binding.btnAccounts.setOnClickListener {
+            findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
             val url = "wss://85.105.107.53:9095"
             webSocketViewModel.connect(url)
             webSocketViewModel.sendAuthRequest("demo", "123456")
