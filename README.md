@@ -14,6 +14,7 @@ SmartNest is an Android application designed to provide a smart home management 
 - [Features](#features)
 - [Open Source Libraries](#open-source-libraries)
 - [WebSocket Integration](#websocket-integration)
+- [Commit Practices](#commit-practices)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -60,6 +61,25 @@ SmartNest uses WebSockets to enable real-time communication between the app and 
 1. Ensure that the WebSocket server is running and accessible.
 2. Connect to the WebSocket server using the provided URL in the app.
 3. Listen for messages and handle them appropriately in your application logic.
+
+## Commit Practices
+
+This project follows atomic commit practices and uses semantic commit messages. 
+
+- **Atomic Commits**: Each commit should represent a single logical change. This makes it easier to understand the history of changes and to revert specific changes if necessary.
+  
+- **Semantic Commit Messages**: Commit messages should follow the format:
+  - `type(scope): subject`
+  - Examples of types include:
+    - `feat`: A new feature
+    - `fix`: A bug fix
+    - `docs`: Documentation changes
+    - `style`: Changes that do not affect the meaning of the code (white-space, formatting, etc.)
+    - `refactor`: A code change that neither fixes a bug nor adds a feature
+    - `test`: Adding missing tests or correcting existing tests
+    - `chore`: Changes to the build process or auxiliary tools and libraries
+
+This practice helps maintain a clear and organized commit history, making it easier for contributors to understand the project's evolution.
 
 ## Getting Started
 
