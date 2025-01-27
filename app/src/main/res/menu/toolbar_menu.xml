@@ -5,7 +5,7 @@
         android:id="@+id/action_settings"
         android:icon="@drawable/outline_settings_24"
         android:title="@string/settings"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         app:iconTint="@color/white" />
 
     <item

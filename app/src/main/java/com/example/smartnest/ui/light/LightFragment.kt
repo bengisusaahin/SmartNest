@@ -16,11 +16,7 @@ class LightFragment : BaseFragment<FragmentLightBinding>(FragmentLightBinding::i
             toolbar = binding.appBar.toolbar,
             title = getString(R.string.light),
             showBackButton = true,
-            navigationIcon = R.drawable.outline_arrow_back_24,
-            rightIcon = R.drawable.outline_highlight_24,
-            onRightIconClick = {
-                Toast.makeText(requireContext(), "Light icon clicked", Toast.LENGTH_SHORT).show()
-            }
+            navigationIcon = R.drawable.outline_arrow_back_24
         )
     }
 

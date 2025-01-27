@@ -20,10 +20,6 @@ class SecondFragment : BaseFragment<FragmentSecondBinding>(FragmentSecondBinding
             toolbar = binding.appBar.toolbar,
             title = getString(R.string.inohom),
             showBackButton = false,
-            rightIcon = R.drawable.outline_settings_24,
-            onRightIconClick = {
-                Toast.makeText(requireContext(), "Settings clicked", Toast.LENGTH_SHORT).show()
-            }
         )
     }
 
